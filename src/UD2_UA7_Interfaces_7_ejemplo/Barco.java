@@ -1,0 +1,48 @@
+package UD2_UA7_Interfaces_7_ejemplo;
+
+import UD2_UA7_Jerarquia_Interfaces.Arrancable;
+
+public class Barco implements Arrancable {
+
+	private double metrosEslora;
+	private int caballosPotencia;
+	
+	public Barco() {
+		this(0, 0);
+	}
+
+	public Barco(double metrosEslora, int caballosPotencia) {
+		this.metrosEslora = metrosEslora;
+		this.caballosPotencia = caballosPotencia;
+	}
+
+	@Override
+	public boolean esReparable() {
+		return getCaballosPotencia() > 0;
+	}
+
+	@Override
+	public void arrancar() {
+		
+		
+	}
+
+	public double getMetrosEslora() {
+		return metrosEslora;
+	}
+
+	public int getCaballosPotencia() {
+		return caballosPotencia;
+	}
+
+	protected void setMetrosEslora(double metrosEslora) {
+		this.metrosEslora = metrosEslora;
+	}
+
+	protected void setCaballosPotencia(int caballosPotencia) {
+		this.caballosPotencia = caballosPotencia;
+	}
+
+	
+
+}
