@@ -7,20 +7,26 @@ public class Vehiculo {
 	protected String getModelo() {
 		return modelo;
 	}
+
 	public String getColor() {
 		return color;
 	}
+
 	protected void setColor(String color) {
 		this.color = color;
 	}
+
 	protected void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
+
 	public Vehiculo() {
 		this("", "");
 	}
+
 	public Vehiculo(String modelo, String color) {
 		setModelo(modelo);
 		setColor(color);
 	}
+
 }

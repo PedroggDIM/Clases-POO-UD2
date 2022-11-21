@@ -10,13 +10,10 @@ public class Moto extends VehiculoConRuedas {
 	public int getNumeroDeRuedas() {
 		return 2;
 	}
+
 	@Override
 	public String toString() {
 		return "Moto: " + super.toString();
-	}
-	@Override
-	public void arrancar() {
-		System.out.println(getModelo() + "estoy arrancando");
 	}
 
 }

@@ -13,11 +13,10 @@ public class Repuesto {
 	public float getPrecio() {
 		return precio;
 	}
-
 	public String getNombre() {
 		return nombre;
 	}
-	protected void setId(int id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	protected void setPrecio(float precio) {
@@ -25,22 +24,18 @@ public class Repuesto {
 	}
 	protected void setNombre(String nombre) {
 		this.nombre = nombre;
+	}	
+	public Repuesto( String nombre, float precio) {
+		//pongo -1 al id porque el 0 puede ser un id existente en nuestro Almacen
+		this(-1, nombre, precio);
 	}
+
 	public Repuesto(int id, String nombre, float precio) {
 		setId(id);
 		setNombre(nombre);
 		setPrecio(precio);
 	}
-	
-	public Repuesto(String nombre,float precio) {
-		this.nombre = nombre;
-		this.precio = precio;
-		
-	}
-	@Override
-	public String toString() {
-		return "(#" + getId() + ") " + getNombre() + " | " + getPrecio() + "€";
-	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -51,6 +46,11 @@ public class Repuesto {
 			return false;
 		Repuesto other = (Repuesto) obj;
 		return Objects.equals(getNombre(), other.getNombre()) && Objects.equals(getPrecio(), other.getPrecio());
+	}
+
+	@Override
+	public String toString() {
+		return "(#" + getId() + ") " + getNombre() + " | " + getPrecio() + "€";
 	}
 }
 

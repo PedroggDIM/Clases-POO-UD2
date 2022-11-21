@@ -1,32 +1,31 @@
 package UD2_UA9_u_10d_taller_miSolucion;
 
-public class Coche extends Vehiculo{
+public class Coche extends VehiculoConRuedas {
 
-	private int numPasajeros;
-	
-	
-	// constructores
-	public Coche(int ruedas, String matricula, String marca, String modelo, int kilometraje, int numPasajeros) {
-		super(ruedas, matricula, marca, modelo, kilometraje);
-		this.numPasajeros = numPasajeros;
-	}	
+	private String matricula;
 
-	public Coche(int ruedas, String matricula, String marca, String modelo, int kilometraje) {
-		super(ruedas, matricula, marca, modelo, kilometraje);
+	public String getMatricula() {
+		return matricula;
+	}
+
+	protected void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+
+	public Coche(String marca, String modelo, String color, String matricula) {
+		super(marca, modelo, color);
+		this.matricula = matricula;
 	}
 
 	@Override
-	public int getEdad() {		
-		return 18;
-	}	
-
-	
-	public int getNumPasajeros() {
-		return numPasajeros;
+	public int getNumeroDeRuedas() {
+		return 4;
 	}
 
-	protected void setNumPasajeros(int numPasajeros) {
-		this.numPasajeros = numPasajeros;
+	@Override
+	public void arrancar() {
+		super.arrancar();
+		System.out.println("El vehiculo matrícula " + getMatricula() + " arrancado");
 	}
 
 }

@@ -6,33 +6,32 @@ import java.util.Collection;
 
 public class HojaDeTrabajo {
 	
-	private VehiculoConRuedas vehiculoAReparar;
-	private Collection<Averia> averiasReparacion;
+	private Reparable vehiculoAReparar;
+	private Collection<Averia> averiasArregladas;
 	private LocalDate fechaEntrada;
 
-	public VehiculoConRuedas getVehiculoAReparar() {
+	public Reparable getVehiculoAReparar() {
 		return vehiculoAReparar;
 	}
-	
-	protected Collection<Averia> getAveriasReparacion() {
-		return averiasReparacion;
+
+	public Collection<Averia> getAveriasArregladas() {
+		return averiasArregladas;
 	}
 
 	public LocalDate getFechaEntrada() {
 		return fechaEntrada;
 	}
 
-	protected void setVehiculoAReparar(VehiculoConRuedas vehiculoAReparar) {
+	protected void setVehiculoAReparar(Reparable vehiculoAReparar) {
 		this.vehiculoAReparar = vehiculoAReparar;
 	}
-	 // si esta vacia la inicializo y añado las averiasReparar
-	// si no esta vacia añado averiasReparar a las que ya hay.
+
 	protected void setAveriasReparacion(Collection<Averia> averiasReparar) {
-		if (getAveriasReparacion() == null) {
-			this.averiasReparacion = new ArrayList<Averia>();
-			this.averiasReparacion.addAll(averiasReparar);
+		if (getAveriasArregladas() == null) {
+			this.averiasArregladas = new ArrayList<Averia>();
+			this.averiasArregladas.addAll(averiasReparar);
 		} else {
-			getAveriasReparacion().addAll(averiasReparar);
+			getAveriasArregladas().addAll(averiasReparar);
 		}
 	}
 
@@ -40,14 +39,22 @@ public class HojaDeTrabajo {
 		this.fechaEntrada = fechaEntrada;
 	}
 
-	public HojaDeTrabajo(VehiculoConRuedas vehiculo, LocalDate fechaEntrada) {
+	public HojaDeTrabajo(Reparable vehiculo, LocalDate fechaEntrada) {
 		setVehiculoAReparar(vehiculo);
 		setAveriasReparacion(new ArrayList<Averia>());
-		setFechaEntrada(fechaEntrada);
+		setFechaEntrada(fechaEntrada.now());
 	}
 
-	public HojaDeTrabajo(VehiculoConRuedas vehiculo) {
+	public HojaDeTrabajo(Reparable vehiculo) {
 		this(vehiculo, LocalDate.now());
 	}
-
+	
+	public void addReparacionFinalizada(Averia averia) {
+		if(getVehiculoAReparar().getAverias().contains(averia)) {
+			getVehiculoAReparar().getAverias().remove(averia);
+			getAveriasArregladas().add(averia);
+		} else {
+			System.err.println("Se intenta añadir una reparación sin haber avería");
+		}
+	}
 }
