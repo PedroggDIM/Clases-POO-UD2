@@ -31,7 +31,9 @@ public class Persona {
 		//según su tipo (0 números, cadena vacía para String, etc.). Sexo será hombre por defecto, usa una constante para ello.
 		    //Primero construimos el constructor con todos los parametros y 
 		    // en este con el this le llamamos y construimos por defecto.
-			public Persona() {
+			public Persona() {  
+				  // ESTE CONSTRUCTOR LLAMA AL DE ABAJO (VERLO HACIENDO CLIC EN EL THIS)
+				  // y establece los valores por defecto menos el DNI.
 				this("", 0, "", SEXO_DEF, 0, 0);
 			}
 

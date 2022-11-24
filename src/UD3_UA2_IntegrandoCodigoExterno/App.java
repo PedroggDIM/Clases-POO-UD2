@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.kzurro.electrodomesticos.Electrodomestico;
 import com.kzurro.electrodomesticos.Financiable;
 
 
@@ -65,7 +66,8 @@ public class App {
 		Reparable electrodomestico = new ElectrodomesticoReparable();
 
 		tallerElectrodomesticos.diagnosticar(electrodomestico);
-
+		
+        System.out.println("***Obtengo las averías del electrodomestico***");
 		electrodomestico.getAverias().forEach(a -> System.out.println(a));
         System.out.println("/////Integrando código externo/////////");
 		System.out.println(((Financiable) electrodomestico).getCuantiaCuota());
@@ -82,7 +84,13 @@ public class App {
 				System.out.println(" Si la financias cuesta cada cuota" + ((Financiable) averia).getCuantiaCuota());
 			}
 		}
-
+	////////////////////////////////////////////////////////////////////////////////////////////	
+		Financiable electrodomesticoFinanciable = new Electrodomestico(12.5, 25);
+		System.out.println("*******************************");
+		System.out.println(electrodomesticoFinanciable);
+	/////////////////////////////////////////////////////////////////////////////////////////
+		Electrodomestico lavadora = new Electrodomestico();
+		
 	}
 
 }
