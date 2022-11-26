@@ -8,7 +8,7 @@ public class AppVehiculo {
 		Moto moto1 = new Moto(2, 9999, true);
 		Barco barco1 = new Barco(5, 0);
 
-// Interfaz como tipo de referencia		
+// Interfaz como tipo de referencia	    //Ver imagen de herencia en los apuntes.	
 		   // SE GARANTIZA LA SUSTITUIBILIDAD POR CUALQUIER INSTANCIA DE UNA CLASE QUE LA IMPLEMENTE
 		
 		Arrancable barco2 = new Barco(10, 150);            // Barco implementa Arrancable.
