@@ -27,6 +27,19 @@ public class Libro {
 									+ libro.getTitulo() + "\""
 							: otroLibro.getTitulo() + "tiene más páginas que " + libro.getTitulo();
 		}
+		
+		//Método para calcular cual tiene más páginas
+				public static String masPaginas2(Libro libro, Libro otroLibro) {
+					if(libro.getNumeroPaginas() > otroLibro.getNumeroPaginas()) {
+						return libro.getTitulo() + " tiene más páginas que " + otroLibro.getTitulo();
+					}else if (libro.getNumeroPaginas() < otroLibro.getNumeroPaginas()){
+						return otroLibro.getTitulo()+ " tiene más páginas que " + libro.getTitulo();
+					}else {
+						return "Tienen las mismas pánginas los dos libros";
+					}			
+				}
+		
+		
 
 		// accesores
 		public String getISBN() {

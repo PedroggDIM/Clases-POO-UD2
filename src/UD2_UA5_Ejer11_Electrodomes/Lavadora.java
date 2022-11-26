@@ -9,7 +9,7 @@ public class Lavadora extends Electrodomestico {
 	private int carga;
 	
 	// constructor por defecto, llama al constructor por defecto de
-	// la superclase
+	// la superclase y establece también la carga por defecto.
 	public Lavadora() {
 		super();           
 		this.carga = CARGA_DEF;
@@ -57,6 +57,5 @@ public class Lavadora extends Electrodomestico {
 			}
 
 			return plus;
-		}
-		
+		}		
 }

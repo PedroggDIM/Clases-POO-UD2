@@ -10,13 +10,16 @@ public class Cuadrado extends Poligono {
 		                 // establece por defecto 4 lados.
 		setLado(lado);
 	}
+	
 	public Cuadrado(String color) {
 		super(4, color); // llama al constructor de la clase padre
 
 	}
+	
 	public Cuadrado() {
 		setNumLados(4); //consturctor propio
 	}
+	
  //Al heredar de Polígono sobreescribo el método abstracto.
 	@Override
 	public double calcularArea() {

@@ -43,7 +43,7 @@ public class Vehiculo {
 
 	@Override
 	public String toString() {
-		return "Vehiculo de " + getNumeroRuedas() + " ruedas, modelo =>" + getMarca() + " y color " + getColor();
+		return "Vehiculo de " + getNumeroRuedas() + " ruedas, modelo: " + getMarca() + " y color " + getColor();
 	}
 
 }

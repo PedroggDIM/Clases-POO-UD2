@@ -21,12 +21,13 @@ public class Coche extends Vehiculo {
 		setNumeroPlazas(numeroPlazas);
 	}
     //Constructor con sus parámetros y los de la clase padre.
+
 	public Coche(String modelo, int numeroPlazas, int numeroRuedas, String marca, String color) {
 		super(numeroRuedas, marca, color);
 		setModelo(modelo);
 		setNumeroPlazas(numeroPlazas);
 	}
-	
+
 // Métodos de acceso
 	public String getModelo() {
 		return modelo;

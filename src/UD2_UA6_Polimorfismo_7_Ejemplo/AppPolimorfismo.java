@@ -13,8 +13,8 @@ public class AppPolimorfismo {
 /* - gatoPepe es un Animal y llama al método ruidoHago() de Animal, pero 
  * usa ruidoHago() de la clase Gato (esto es el POLIMORFISMO)
  * - perroFirulais es un Animal y llama al método ruidoHago() de Animal, pero 
- * usa ruidoHago() de la clase Gato (esto es el POLIMORFISMO)
- * 
+ * usa ruidoHago() de la clase Perro (esto es el POLIMORFISMO)
+ * - bicho es un Animal y llama a ruidoHago() de Animal.
  */			 
 		gatoPepe.ruidoHago();   
 		perroFirulais.ruidoHago();

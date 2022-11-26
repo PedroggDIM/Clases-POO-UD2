@@ -1,4 +1,4 @@
-package UD2_UA7_Interfaces_Referencia;
+package UD2_UA7_Jerarquia_Interfaces_default_metodo;
 
 //public abstract class Vehiculo implements Arrancable, OtraInterfaz{  puede implementar varias interfaces.
 public abstract class Vehiculo implements Arrancable{

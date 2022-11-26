@@ -55,7 +55,6 @@ public class Espectador {
 	@Override
 	public String toString() {
 		return "Espectador es: " + getNombre() + " de " + getEdad() + " años y con " + getDinero() + " €";
-	}
-	
+	}	
     
 }

@@ -8,7 +8,7 @@ public class Coche {
 	public String observaciones;
 	protected static String color;
 
-//Método Constructor sin parámetros
+//Método Constructor sin parámetros (por defecto)
 	public Coche() {
 	}
 
@@ -85,6 +85,7 @@ public class Coche {
 	// objeto que yo le paso por parámetro
 	// los atributos que quiero comparar están en el return y hay comparo lo que me
 	// interese.
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -97,4 +98,7 @@ public class Coche {
 		return Objects.equals(bastidor, other.bastidor) && necesitaCarne == other.necesitaCarne
 				&& numRuedas == other.numRuedas && Objects.equals(observaciones, other.observaciones);
 	}
+
 }
+
+

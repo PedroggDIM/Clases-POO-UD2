@@ -17,7 +17,7 @@ public class PoligonoApp {
 /*Permite declarar una clase e instanciarla en la pequeña parte de código
  * donde nos haga falta haciendo nuestro código más legible
  * Es una clase SIN NOMBRE
- * Solucionan situaciones en als que necesitaremos un objeto que podría usar
+ * Solucionan situaciones en las que necesitaremos un objeto que podría usar
  * un tipo prácticamente igual a otro ya creado, salvo por un pequeñísimo cambio
  * que ademas solo vamos a utilizar en ese objeto en un punto concreto de
  * nuestro codigo y nunca mas nos interesara 		
@@ -31,10 +31,11 @@ public class PoligonoApp {
 	public double calcularArea() {		
 		return 5;
 	}
+	
 		
  };		
 // fin clase anonima		
-
+ System.out.println(pentagono.calcularArea());
 	}
 
 }

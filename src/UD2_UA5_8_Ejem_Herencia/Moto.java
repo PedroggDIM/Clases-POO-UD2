@@ -48,7 +48,8 @@ public class Moto extends Vehiculo {
 	}
 	@Override
 	public String toString() {
-		return "Moto " + getColor() + " de " + getNumTiempos() + " tiempos  y " + getCubicaje() + " cc";
+		return "Moto " + getColor() + " de " + getNumTiempos() + " tiempos  y " + getCubicaje() + " cc"
+				+ " //Ruedas: " + getNumeroRuedas();
 	}
 
 	

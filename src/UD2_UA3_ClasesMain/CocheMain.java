@@ -8,6 +8,9 @@ public class CocheMain {
 
 		Coche alfaRomeo = new Coche(4, "2644545", true, "observaciones: gti", "azul");
 
+		System.out.println(alfaRomeo.getBastidor());
+		
+		
 		System.out.println(alfaRomeo.getColor()); // Devuelve azul.
 		alfaRomeo.setColor("negro"); // si el método set color fuera protected
 										// no me dejaría acceder a él (probarlo)

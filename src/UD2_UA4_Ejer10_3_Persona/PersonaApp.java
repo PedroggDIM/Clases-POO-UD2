@@ -7,12 +7,16 @@ public class PersonaApp {
        Persona gil = new Persona();
        Persona espineira = new Persona("Espineria", 35, 'H');
        
+       System.out.println("Constructor por defecto");
        System.out.println(gil);
+       
+       System.out.println("**Constructor con nombre, edad y sexo**");
        System.out.println(espineira);
        System.out.println(espineira.calcularIMC());
        System.out.println(espineira.esMayorEdad());
       
        System.out.println(espineira.getDni());
+       
        
        Persona cesar = new Persona("Cesar", 29, "",' ',72,165);
        System.out.println(cesar.getDni());

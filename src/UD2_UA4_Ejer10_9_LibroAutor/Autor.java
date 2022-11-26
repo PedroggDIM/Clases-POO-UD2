@@ -22,7 +22,8 @@ public class Autor {
 	private Tipo_Autor tipoAutor;
 	
 	
-	// Constructores
+	// Constructor por defecto, con el this llama al segundo y en el segundo si el 
+	// Tipo_Autor es null  establece OTROS.
 		public Autor() {
 			this("", "", null);
 		}
@@ -30,8 +31,9 @@ public class Autor {
 		public Autor(String nombre, String apellidos, Tipo_Autor tipoAutor) {
 			setNombre(nombre);
 			setApellidos(apellidos);
-			setTipoAutor(tipoAutor == null ? Tipo_Autor.OTROS : tipoAutor);
-		}	
+			setTipoAutor(tipoAutor == null ? Tipo_Autor.OTROS : tipoAutor);						              
+			}
+			
 
 	// métodos accesores
 	public String getNombre() {
