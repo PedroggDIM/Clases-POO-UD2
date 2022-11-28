@@ -37,6 +37,10 @@ public class ColeccionesApp {
 		System.out.println("***Imprimo la lista de electrodomésticos***");  
 		// imprimo
         listaElectrodomesticos.forEach(System.out::println);
+		
+		// for(int i=0;i<listaElectrodomesticos.size();i++) {
+		//	  System.out.println(((ArrayList<Electrodomestico>) listaElectrodomesticos).get(i));
+		// }
         
         System.out.println("***Imprimo la lista de electrodomésticos sin television3 (200)");
 		// boolean remove (Object ob) => elimina un nodo ob de una lista
@@ -53,7 +57,7 @@ public class ColeccionesApp {
 		// boolean isEmpty() => permite saber si una lista está vacía
 		System.out.println(listaElectrodomesticos.isEmpty());
 
-		// boolean contains(Object ob) => si un elemento ob determinado está en una
+		// boolean contains(Object ob) => si un elemento ob determinado está en una lista
 		System.out.println(listaElectrodomesticos.contains(television2));
 
 		// String toString() => devuelve una cadena que representa la colección
@@ -61,7 +65,7 @@ public class ColeccionesApp {
 		
 		//Para obtener el precio.        
         for (Electrodomestico e : listaElectrodomesticos) {
-        	System.out.println("El precio es: " + e.getPrecioBase());
+        	System.out.println("El precio es: " + e.getPrecioBase());        	
         }
         
 		// boolean conteinsAll(Collection <?> c) => true si todos los elementos de e
@@ -108,7 +112,7 @@ public class ColeccionesApp {
 		  * E get(int indice) =>devuelve el elemento que ocupa el lugar índice
 		  *  en la lista, siendo O el índice del primer elemento, como en los arrays.
 		  */
-		 System.out.println("**Imrpimo lista electrodomésticos**");
+		 System.out.println("**Imprimo lista electrodomésticos**");
 		 for(int i=0;i<electrodomesticos.size();i++) {
 			  System.out.println(electrodomesticos.get(i));
 		 }
@@ -121,11 +125,11 @@ public class ColeccionesApp {
 		 // television1 lo había eliminado antes, 
 		 // television1 era Television television1 = new Television(500, 80, 'E', "negro", 42, false);
 		 // la añado en el puesto 2 (0, 1 , 2)
-		 // machaca el elemento de la posición 3 y mete el nuevo.
+		 // MACHACA el elemento de la posición 3 y mete el nuevo.
 		 electrodomesticos.set(2,  television1);
 		 
-		 //void add(int indice, E elem) => inserta el valor elem en la posición 
-		 //índice, añadiéndose, sin machacar el valor previo.
+		 //void add(int indice, E elem) => INSERTA el valor elem en la posición 
+		 //índice, añadiéndose, SIN MACHACAR el valor previo.
 		 // television1 la había eliminado previamente, era:
 		 // Television television1 = new Television(500, 80, 'E', "negro", 42, false);
 		 // y se va a la posicion 9 que es la última.

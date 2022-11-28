@@ -194,11 +194,18 @@ public class ColeccionesApp {
  			@Override
  			public int compare(Electrodomestico o1, Electrodomestico o2) {
 
- 				return (int) (o1.getPrecioBase() - o2.getPrecioBase());
+ 				return (int) (o1.getPrecioBase() - o2.getPrecioBase());		
+ 			
+		
  			}
  		});
         System.out.println("\n**Ordenando por precio con el método y la clase anónima **");
  		electrodomesticos.forEach(System.out::println); 
+ 		
+ 		System.out.println("**Imprimo solo el precio**");
+ 		for(Electrodomestico li : electrodomesticos) {
+            		System.out.println("Ordenados por PrecioBase electrodomesticos: " + li.getPrecioBase());
+                	}
  		
  		/*
  		// mismo ejemplo con televisiones. 

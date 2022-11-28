@@ -133,7 +133,7 @@ public class ColeccionesApp {
          System.out.println("**SIN ORDENAR**");
          televisiones.forEach(System.out::println);
          System.out.println("**ORDENADAS**");
-         televisiones.sort(null);  // si le paso null orden por orden natural
+         televisiones.sort(null);  // si le paso null orden por orden NATURAL
          televisiones.forEach(System.out::println);
          
    // LO SIGUIENTE SE VE EN EL  LA PRESENTACION UD2_UA10_Comprator    

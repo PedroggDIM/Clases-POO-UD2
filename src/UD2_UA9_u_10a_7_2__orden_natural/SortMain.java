@@ -9,7 +9,13 @@ import java.util.List;
 public class SortMain {
 
 	public static void main(String[] args) {
+		
+		//  Construyo una lista List con cadenas de caracteres tipo String a partir de Arrays.asList
 		List<String> listaStrings = Arrays.asList("a", "c", "b", "ab");
+		
+	              //	for(String lis : listaStrings) {
+	                 //		System.out.println(lis);
+	                     //	}
 		Collection<String> strings = listaStrings;
 
 		System.out.println(strings);
@@ -26,7 +32,7 @@ public class SortMain {
 		listaObjetos.add(new Objeto(-5, "kjnj", 'z', false));
         
 		// para la ordenacion por mensaje
-		 //listaObjetos.sort(null);
+		 listaObjetos.sort(null);
 		// para ordenar por lo que esté puesto en el metodo compareTo()
 		// si es por mensaje .sort ordena por orden alfabetico de ultimo a primero
 		///                  .reverse ordena por orden alfabetico  de primero a ultimo
