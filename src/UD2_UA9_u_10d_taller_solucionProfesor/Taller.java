@@ -81,10 +81,9 @@ public class Taller {
 			presupuesto += averia.getPrecio();
 
 		}
-
 		return presupuesto;
 	}
-
+// 1. Recuperar las HojasDeTrabajo de un Reparable
 	public Collection<HojaDeTrabajo> getHojasDeTrabajoParaReparable(Reparable reparable) {
 		Collection<HojaDeTrabajo> hojasDelReparable = new ArrayList<HojaDeTrabajo>();
 		for (HojaDeTrabajo hojaDeTrabajo : getHojasDeTrabajo()) {
@@ -94,7 +93,7 @@ public class Taller {
 		}
 		return hojasDelReparable;
 	}
-
+// apartado 5.8 puntos 2, 3, 4
 	public List<HojaDeTrabajo> getHojasHastaHaceUnAno(Reparable reparable) {
 		LocalDate haceUnAno = LocalDate.now().minusYears(1);
 
@@ -109,12 +108,13 @@ public class Taller {
 				averiasGarantizadas.add(averia);
 			}
 		}
-
 		return averiasGarantizadas;
 	}
-	
+
 	public boolean isGarantia(Reparable reparable) {
 		return getAveriasGarantizadas(reparable).contains(reparable.getAverias());
 	}
+
+	
 
 }

@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ConstantesTaller {
+	
 	final static Repuesto REPUESTO1 = new Repuesto("aceite", 12.6f);
 	final static Repuesto REPUESTO2 = new Repuesto("pastillas de freno", 22.6f);
 	final static Repuesto REPUESTO3 = new Repuesto("anticongelante", 9.6f);
