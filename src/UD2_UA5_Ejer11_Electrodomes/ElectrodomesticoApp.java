@@ -13,7 +13,7 @@ public class ElectrodomesticoApp {
 	 * crear objetos Electrodomestico, pero recuerda que Televisión y Lavadora
 	 * también son electrodomésticos).
 	 */
-	
+
 	// Array de Electrodomesticos
 	public static void main(String[] args) {
 		// Array de Electrodomesticos
@@ -35,7 +35,10 @@ public class ElectrodomesticoApp {
 		double sumaElectrodomesticos = 0;
 		double sumaTelevisiones = 0;
 		double sumaLavadoras = 0;
-
+		// Deberá mostrar el precio de cada clase, es decir, el precio de todas las
+		// televisiones por un lado, el de las lavadoras por otro y la suma de los
+		// Electrodomésticos (puedes crear objetos Electrodomestico, pero recuerda que
+		// Televisión y Lavadora también son electrodomésticos).
 		// Recorremos el array invocando el metodo precioFinal
 		for (int i = 0; i < listaElectrodomesticos.length; i++) {
 			/*

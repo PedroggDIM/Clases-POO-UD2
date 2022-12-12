@@ -44,7 +44,7 @@ contraseña2 valor_bololeano2*/
 
 			// para comprobar resultados
 
-			System.out.println("Contraseña " + (i + 1) + " =\t" + passwords[i] + "\t y es : \t\t\t"
+			System.out.println("Contraseña " + (i + 1) + " = " + passwords[i] + " y es     : "
 					+ (passwordsEsFuerte[i] ? " fuerte" : " débil"));
 		}
 

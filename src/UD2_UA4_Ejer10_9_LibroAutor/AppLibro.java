@@ -9,7 +9,7 @@ public class AppLibro {
 		
 		Libro libro1 = new Libro("123456789PO52", "Un libro Cualquiera", autor1, 4000);
 
-		               // en este libro lo instanciamos poneiendo el constructor de autor dentro del
+		               // en este libro lo instanciamos poniendo el constructor de autor dentro del
 				           // constructor de libro
 		Libro libro2 = new Libro("123659LL52222", "Aprende programar con Java",
 						new Autor("Alfonso", "Jiménes Marín", Tipo_Autor.NARRATIVA), 403);

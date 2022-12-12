@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class AppBaraja {
 	public static void main(String[] args) {
 
-		Baraja baraja = new Baraja();
+		Baraja baraja = new Baraja();	
+		
 
 		// barajar baraja
 		baraja.barajar();

@@ -28,6 +28,8 @@ public class Libro {
 							: otroLibro.getTitulo() + "tiene más páginas que " + libro.getTitulo();
 		}
 		
+//  USAR ESTE PARA VER QUE LIBRO TIENE MÁS PÁGINAS	
+		
 		//Método para calcular cual tiene más páginas
 				public static String masPaginas2(Libro libro, Libro otroLibro) {
 					if(libro.getNumeroPaginas() > otroLibro.getNumeroPaginas()) {
