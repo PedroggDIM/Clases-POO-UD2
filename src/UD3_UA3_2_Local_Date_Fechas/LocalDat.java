@@ -18,8 +18,7 @@ import java.util.Locale;
 public class LocalDat {
 
 	public static void main(String[] args) {
-		
-		LocalDate localDate1 = LocalDate.now();
+		 LocalDate localDate1 = LocalDate.now();
 	        System.out.println("LocalDate1: " + localDate1);
 	 
 	        LocalDate localDate2 = LocalDate.now(Clock.systemUTC());
@@ -32,7 +31,7 @@ public class LocalDat {
 	        System.out.println("LocalDate4: " + localDate4);
 	        
 	        LocalDate localDate5 = LocalDate.of(1980, Month.APRIL, 9);
-	        System.out.println("LocalDate5: " + localDate5); 
+	        System.out.println("LocalDate5: " + localDate5);
 	        
 	        LocalDate localDate6 = LocalDate.ofEpochDay(3629);
 	        System.out.println("LocalDate6: " + localDate6);
@@ -59,8 +58,7 @@ public class LocalDat {
 	        System.out.println("DAY_OF_MONTH : " + localDate.getLong(ChronoField.DAY_OF_MONTH));        
 	        System.out.println("MONTH_OF_YEAR: " + localDate.getLong(ChronoField.MONTH_OF_YEAR));
 	        System.out.println("YEAR         : " + localDate.getLong(ChronoField.YEAR));
-
-	    System.out.println("\n---------------------------------------");	        
+	        
 	        LocalDate localDate22 = LocalDate.parse("1980-04-09");
 	        System.out.println("LocalDate     : " + localDate22);
 	        
@@ -92,7 +90,7 @@ public class LocalDat {
 	        // Using TemporalAmount - Period 
 	        System.out.println("5 years later : " + localDate22.plus(Period.ofYears(5))); 
 	        
-System.out.println("\n-----------------------------------------------");        
+        
 	        LocalDate today = LocalDate.now();
 
 	        String formattedDate = today.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG));
@@ -135,7 +133,7 @@ System.out.println("\n-----------------------------------------------");
 	       	System.out.println(rangoDias);
 	       	
 	       	
-System.out.println("\n-------opciones .now( ) -----------------------");	       	
+	       	
 
 	        /*
 	         * Opciones .now()
