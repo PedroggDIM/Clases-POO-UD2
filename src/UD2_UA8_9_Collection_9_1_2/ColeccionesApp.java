@@ -42,7 +42,7 @@ public class ColeccionesApp {
 		//	  System.out.println(((ArrayList<Electrodomestico>) listaElectrodomesticos).get(i));
 		// }
         
-        System.out.println("***Imprimo la lista de electrodomésticos sin television3 (200)");
+        System.out.println("\n***Imprimo la lista de electrodomésticos sin television3 (200)");
 		// boolean remove (Object ob) => elimina un nodo ob de una lista
 		listaElectrodomesticos.remove(television3);
 		 listaElectrodomesticos.forEach(System.out::println);
@@ -51,11 +51,11 @@ public class ColeccionesApp {
 		// listaElectrodomesticos.clear();
 
 		// int size() => número de elementos (o nodos) insertados en una lista
-		System.out.println("***Imprimo el número de elementos***");
+		System.out.println("\n***Imprimo el número de elementos***");
 		System.out.println(listaElectrodomesticos.size());
 
 		// boolean isEmpty() => permite saber si una lista está vacía
-		System.out.println(listaElectrodomesticos.isEmpty());
+		System.out.println("Esta vacia la lista?: " + listaElectrodomesticos.isEmpty());
 
 		// boolean contains(Object ob) => si un elemento ob determinado está en una lista
 		System.out.println(listaElectrodomesticos.contains(television2));
