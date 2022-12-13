@@ -6,6 +6,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import UD2_UA8_9_Collection_comparable.Electrodomestico;
+import UD2_UA8_9_Collection_comparable.Lavadora;
+import UD2_UA8_9_Collection_comparable.Television;
+
 public class ColeccionesApp {
 	
 	public static void main(String[] args) {
@@ -42,7 +46,7 @@ public class ColeccionesApp {
 		listaElectrodomesticos.remove(television3);
 		  
 		// imprimo
-        //listaElectrodomesticos.forEach(System.out::println);
+        listaElectrodomesticos.forEach(System.out::println);
 		// void clear() => eliminar todos los nodos de una lista y dejarla vacía
 		// listaElectrodomesticos.clear();
 
@@ -67,7 +71,7 @@ public class ColeccionesApp {
         	System.out.println(e.getPrecioBase());
         }
         
-		// boolean conteinsAll(Collection <?> c) => true si todos los elementos de e
+		// boolean conteinsAll(Collection <?> c) =List<Electrodomestico> otrosElectrodomesticos = electrodomesticos;> true si todos los elementos de e
 		// están en la colección que hace la llamada
 		
 		List<Television> televisiones = new ArrayList<>();
@@ -278,6 +282,8 @@ public class ColeccionesApp {
         		 * static T max(Collection<? extends T> col)=> nos devuelve el valor máximo de
         		 * una colección según el orden natural (no tiene por qué ser una lista)
         		 */
+        		
+        		// se debe implementar la interfaz comparable para el método max( ) 
         		System.out.println("*******************************");
         		System.out.println(Collections.max(electrodomesticos));
 
