@@ -41,7 +41,6 @@ public class Almacen {
 				contadorRepuestos++;
 			}
 		}
-
 		return contadorRepuestos >= cantidad;
 	}
 

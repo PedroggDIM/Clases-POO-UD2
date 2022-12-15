@@ -66,7 +66,7 @@ public class ColeccionesApp {
         	System.out.println(e.getPrecioBase());
         }
         
-		// boolean conteinsAll(Collection <?> c) => true si todos los elementos de e
+		// boolean conteinsAll(Collection <?> c) =List<Electrodomestico> otrosElectrodomesticos = electrodomesticos;> true si todos los elementos de e
 		// están en la colección que hace la llamada
 		
 		List<Television> televisiones = new ArrayList<>();

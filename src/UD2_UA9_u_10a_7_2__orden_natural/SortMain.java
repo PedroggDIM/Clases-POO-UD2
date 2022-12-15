@@ -21,6 +21,8 @@ public class SortMain {
 		System.out.println(strings);
 
 		listaStrings.sort(null);
+		
+		System.out.println(strings);
 
 		List<Objeto> listaObjetos = new ArrayList<>();
 
